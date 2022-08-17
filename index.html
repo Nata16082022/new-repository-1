@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/dae9b8f160.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+    <title>HomeProject</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1>Weather forecast</h1>
+        </div>
+        <div class="col-6">
+            <div class="row">
+          <div class = "col-7 pr-0">
+          <form class="form" id="search">
+            <input
+              type="text"
+              id="input-city"
+              placeholder="Search for contry, city"
+            />
+            <input type="submit" value="🔍" />
+            </form>
+          </div>
+          <div class="col-3  pl-0">
+            <button id = "Geolocation"> 🛰️ </button>
+           </div>
+                  </div>
+        </div>
+      </div>
+
+      <h2>KYIV</h2>
+
+      <p class="status">Showers in places</p>
+      <div class="row">
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6 pr-0">
+              
+            </div>
+            <div class="col-6 pl-0">
+              <p class="big-text">
+                <span id="degree">21</span
+                ><span class="unit">°C</a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <p id="full-day">Sunday</p>
+          <p id="full-date">17 July 2022</p>
+          <p id="full-time">17:07:58</p>
+        </div>
+        <div class="col-5">
+          <p>Humidity : <span id = "humidity">37</span> %</p>
+          <p>Wind:  <span id = "windSpeed"> 6 </span> m/s</p>
+          <p>Pressure: <span id = "pressure">750</span> hPa</p>
+        </div>
+      </div>
+      <br />
+
+      <p class="developer">
+        This page was built by
+        <span class="span-developer">Nataliia Miniailo</span>
+      </p>
+    </div>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
